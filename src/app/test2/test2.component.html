@@ -1,2 +1,9 @@
-<button (click)="Subscribe()">вывод</button>
-<p>{{a}}</p>
+<button [style.font-size]="size$ | async" (click)="changeSize()">вывод</button>
+<button (click)=" Subscribe()">button</button>
+<button (click)=" Subscribe()">button</button>
+@if (displayedObservable$ | async; as numbers) {
+  @for (number of numbers; track $index) {
+    <span>{{ number }}</span>
+  }
+}
+

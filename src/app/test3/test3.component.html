@@ -1,2 +1,3 @@
-<button (click)="Subscribe()">вывод</button>
-<p>{{a}}</p>
+<button [style.font-size]="size" (click)="changeSize()">Вывод</button>
+<button (click)=" Subscribe()">button</button>
+<p>{{ displayedObservable$ | async }}</p>
